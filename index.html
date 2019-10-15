@@ -48,11 +48,31 @@
               </select>
             </div>
             <div class="form-group">
-              <label for="track"></label>
+              <label for="design">Which Languange is best used for design:</label>
+              <select id="design">
+                <option value="css">CSS/JavaScript</option>
+                <option value="ruby">Ruby/Rails</option>
+                <option value="c">C#/.Net</option>
+                <option value="NA">Don't know?</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="">Which Languange is best used for Backend:</label>
+              <select id="back">
+                <option value="css">CSS</option>
+                <option value="ruby">Ruby</option>
+                <option value="c">C#/JavaScript</option>
+                <option value="NA">Don't know?</option>
+              </select>
             </div>
 
             <button type="submit" class="btn btn-primary">Let's find out!</button>
           </form>
+        </div>
+        <div class="col-md-6">
+          <h2>Your Track:</h2>
+          <p id="hide1">Your track/languanges, that you would injoy and learn the best is: <span id="result"></span>!</p>
+          <p id="hide2">It looks like you are new. Why don't you go here, <a href="https://www.epicodus.com/">Epicodus</a>, and sign-up!</p>
         </div>
       </div>
     </div>
