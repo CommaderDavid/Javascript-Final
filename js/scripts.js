@@ -10,6 +10,8 @@ var whichTra = function(work, style, fun, design, back) {
     return "Ruby/Rails"
   } else if (fun === "game" && design === "css" && back === "css") {
     return "CSS/React"
+  } else {
+    return "not clear, look here"
   }
 }
 
@@ -22,7 +24,16 @@ $(document).ready(function() {
     var design = $("select#design").val();
     var back = $("select#back").val();
 
-    var result =
+    if (work === "NA" && style === "NA" && fun === "NA" && design === "NA" && back === "NA") {
+      $("#hide2").show();
+      $("#hide1").hide();
+    } else {
+      var result = whichTra(work, style, fun, design, back);
+
+      $("#result").empty().append(result);
+      $("#hide1").show();
+      $("#hide2").hide();
+    }
 
     e.preventDefault();
   });
