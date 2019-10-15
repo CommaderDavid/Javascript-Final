@@ -1,3 +1,27 @@
 #hide1, #hide2 {
   display: none;
 }
+
+.intro {
+  text-align: center;
+  color: #29a3a3;
+}
+
+#title {
+  color: #29a3a3;
+  font-weight: bold;
+}
+
+#tri {
+  position: absolute;
+  top: 55%;
+  left: 70%;
+}
+
+body {
+  background-image: url("./../img/epic.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 150px;
+  background-attachment: scroll;
+}
