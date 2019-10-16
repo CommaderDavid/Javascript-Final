@@ -13,9 +13,7 @@
 }
 
 #tri {
-  position: absolute;
-  top: 55%;
-  left: 70%;
+  float: right;
 }
 
 body {
